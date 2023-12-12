@@ -9,10 +9,23 @@ body{
     min-width: 800px;
 }
 .h1{
-    margin: 30px 0 10px 30px;
+    margin: 30px 0 30px 30px;
     font-size: 30px;
     min-width: 1000px;
 }
+
+.tit{
+    background:rgba(92, 130, 219, 0.377);
+    text-align: center;
+    width: 500px;
+    border-radius: 20px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
 input {
     height: 20px;
     border: solid 1px #cacaca;
@@ -34,6 +47,7 @@ input {
     max-width: 800px;
     max-height: 260px;
     margin: auto;
+    margin-bottom: 100px;    
 }
 
 
@@ -159,8 +173,17 @@ input {
     margin: 5px 20px 5px 15px;
     border-radius: 20px;
 }
+
+.cslt2{
+    background:linear-gradient(220deg, #ff646462,#ffe6a5);
+    width: 430px;
+    height: 250px;
+    margin: 5px 20px 5px 15px;
+    border-radius: 20px;
+}
+
 .cslt3{
-    background:linear-gradient(220deg, #7acde2,#52dc83);
+    background:linear-gradient(220deg, #f09bde,#a3d5fb92);
     width: 430px;
     height: 277px;
     margin: 5px 20px 5px 15px;
@@ -295,7 +318,7 @@ input {
     max-width: 800px;
     max-height: 260px;
     margin: auto;
-    
+    margin-bottom: 100px;
 }
 
 .baoboc1{
@@ -485,5 +508,5 @@ input {
     max-width: 800px;
     max-height: 288px;
     margin: auto;
-    
+    margin-bottom:80px ;
 }
