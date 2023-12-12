@@ -1,0 +1,489 @@
+body{
+    align-items: center;
+    background: linear-gradient(150deg,#ead6ee,#a0f1ea );
+    font-family: 'monospace', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+    background-repeat: no-repeat;
+    min-width: 800px;
+}
+.h1{
+    margin: 30px 0 10px 30px;
+    font-size: 30px;
+    min-width: 1000px;
+}
+input {
+    height: 20px;
+    border: solid 1px #cacaca;
+}
+
+.wrapper{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255,255,255,0.30);
+    border: 1px solid rgba(255,255,255,0.34);
+    flex-basis: 400px;
+    height: 500px;
+    padding: 20px 35px;
+    border-radius: 20px;
+    min-width: 800px;
+    max-width: 800px;
+    max-height: 260px;
+    margin: auto;
+}
+
+
+.BED-input{
+    background-color: transparent;
+    color: #232323;
+    overflow: auto;
+    padding: 10px;
+    text-align: left;
+    width: 326px;
+}
+
+
+.button{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255,255,0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35,35,0.1);
+    color: #232323;
+    flex-basis: inherit;
+    font-size: 24px;
+}
+
+
+.button:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255,255,0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35,35,0.1);
+    color: #fff;
+    background: #d72880;
+}
+
+.button:last-child:hover{
+    background-color: inherit;
+    color: inherit;
+}
+
+.button:hover{
+    background-color: inherit;
+}
+
+.button:active{
+    background-color: #ffef78;
+}
+ .input-box {
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 29px;
+ }
+
+.TongLieubox {
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 30px;
+}
+
+.abbox {
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 33px;
+}    
+.baoboc{
+    border-radius: 10px;
+    background-color:rgba(255, 255,255, 0.4);
+    height: 250px;
+    margin: 5px;
+    width: 350px;
+}
+
+.BEDresult{
+    border-radius: 10px;   
+    margin-left: 40px;
+    text-align: center;
+    max-width: 100px;
+}
+
+.EQD2result{
+    border-radius: 10px;
+    margin-left: 28px;
+    text-align: center;
+    max-width: 100px;
+}
+
+.tinhBED{
+    border-radius: 20px;
+    margin: 8px 10px 2px 10px;
+    border: solid 1px #cacaca;
+    margin-left: 10px;
+    width:100px;
+    height: 30px;
+    background: rgb(162, 254, 173);
+    font-weight: 600;
+}
+
+.tinhBED:hover {
+    background-color: #cacaca;
+    cursor: pointer;
+}
+
+.bedresult{
+    margin:10px;
+    max-width: 200px;
+}
+
+.eqdresult{
+    margin: 10px;
+    max-width: 200px;
+}
+
+.input{
+    display: flex;
+}
+.cslt{
+    background:linear-gradient(220deg, #7acde2,#52dc83);
+    width: 430px;
+    height: 250px;
+    margin: 5px 20px 5px 15px;
+    border-radius: 20px;
+}
+.cslt3{
+    background:linear-gradient(220deg, #7acde2,#52dc83);
+    width: 430px;
+    height: 277px;
+    margin: 5px 20px 5px 15px;
+    border-radius: 20px;
+}
+.bieuthuc{
+    font-size: 20px;
+    text-align: center;
+    margin:10px ;
+    vertical-align: middle;
+}
+.tieude{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-weight: 600;
+}
+.CSLT{
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 20px;
+    width: 400px;
+    font-size: 25px;
+}
+.doanvan{
+    text-align: left;
+}
+.congthuc{
+    margin: 5px 10px;
+    font-size: 13px;
+}
+
+.formu{
+    margin: 5px;
+    font-weight: 600;
+}
+
+.chuthich{
+    display: flex;
+    background-color: rgba(150,160,255,0.3);
+}
+.chuthich1{
+    display: flex;
+    background-color: rgba(150,160,255,0.3);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.chuthich2{
+    display: flex;
+    height: 29px;
+    background-color: rgba(150,160,255,0.3);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.tuade{
+    background-color: rgba(255, 255,255, 0.6);
+    width: 430px;
+    height: 20px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+.tuade1{
+    margin: 8px 20px;
+    font-size: 13px;
+}
+.tuade2{
+    margin: 8px  0px 8px 160px;
+    font-size: 13px;
+}
+
+
+.phantu1{
+    margin: 10px 30px 5px 30px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu2{
+    margin: 10px 30px 5px 90px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu3{
+    margin: 5px 27px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu4{
+    margin: 5px 20px 5px 49px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu5{
+    margin: 5px 40px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu6{
+    margin: 5px 20px 5px 123px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu8{
+    margin: 5px 20px 5px 122px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu9{
+    margin: 5px 20px 10px 36px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu10{
+    margin: 5px 20px 20px 120px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.wrapper1{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255,255,255,0.30);
+    border: 1px solid rgba(255,255,255,0.34);
+    flex-basis: 400px;
+    height: 500px;
+    padding: 20px 35px;
+    border-radius: 20px;
+    min-width: 800px;
+    max-width: 800px;
+    max-height: 260px;
+    margin: auto;
+    
+}
+
+.baoboc1{
+    border-radius: 10px;
+    background-color:rgba(255, 255,255, 0.4);
+    height: 250px;
+    margin: 5px;
+    width: 350px;
+    height: 278px;
+}
+.input-boxn{
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 32px;
+}
+
+.abbox1 {
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 28px;
+    max-width: 114px;
+} 
+
+.alter-input{
+    background-color: transparent;
+    color: #232323;
+    overflow: auto;
+    padding: 10px 0px 7px 50px;
+    text-align: left;
+    width: 326px;
+}
+.alter-inputab{
+    background-color: transparent;
+    color: #232323;
+    overflow: auto;
+    padding: 10px 0px 2px 50px;
+    text-align: left;
+    width: 326px;
+}
+.congthuccd{
+    margin: 5px 10px;
+    font-size: 15px;
+    height: 27px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px ;
+}
+.tuade22{
+    margin: 8px  0px 8px 160px;
+    font-size: 13px;
+}
+
+
+.phantu21{
+    margin: 10px 32px 5px 40px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu22{
+    margin: 10px 30px 5px 62px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu23{
+    margin: 5px 16px 5px 40px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu24{
+    margin: 5px 10px 5px 60px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu25{
+    margin: 5px 16px 5px 40px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu26{
+    margin: 5px 20px 5px 78px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu28{
+    margin: 5px 20px 5px 63px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu29{
+    margin: 5px 15px 10px 38px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu210{
+    margin: 5px 20px 20px 120px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.kqchuyendoi{
+    margin-left:110px;
+}
+.kqsuasai{
+    margin-left: 35px;
+}
+
+.phantu31{
+    margin: 10px 32px 5px 40px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu32{
+    margin: 10px 30px 5px 73px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu33{
+    margin: 5px 16px 5px 40px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu34{
+    margin: 5px 10px 5px 92px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu35{
+    margin: 5px 16px 5px 40px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu36{
+    margin: 5px 20px 5px 75px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu38{
+    margin: 5px 20px 5px 77px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu39{
+    margin: 5px 15px 5px 40px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu310{
+    margin: 5px 20px 5px 80px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.phantu311{  
+    font-size: 13px;
+    font-weight: 600;
+    margin: 5px 20px 10px 40px;
+}
+.phantu312{
+    font-size: 13px;
+    font-weight: 600;
+    margin: 5px 20px 5px 77px;
+}
+
+.ss-input{
+    background-color: transparent;
+    color: #232323;
+    overflow: auto;
+    padding: 10px 0px 5px 50px;
+    text-align: left;
+    width: 326px;
+}
+.wrapper2{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255,255,255,0.30);
+    border: 1px solid rgba(255,255,255,0.34);
+    flex-basis: 400px;
+    height: 500px;
+    padding: 20px 35px;
+    border-radius: 20px;
+    min-width: 800px;
+    max-width: 800px;
+    max-height: 288px;
+    margin: auto;
+    
+}
