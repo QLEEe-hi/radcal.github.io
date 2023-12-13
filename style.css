@@ -154,6 +154,36 @@ input {
     cursor: pointer;
 }
 
+.tinhcd{
+    border-radius: 20px;
+    margin: 10px 0px 0px -8px;
+    border: solid 1px #cacaca;
+    width:150px;
+    height: 30px;
+    background: rgb(162, 254, 173);
+    font-weight: 600;
+}
+
+.tinhcd:hover {
+    background-color: #cacaca;
+    cursor: pointer;
+}
+
+.tinhsd{
+    border-radius: 20px;
+    margin: 10px 0px 0px 65px;
+    border: solid 1px #cacaca;
+    width:150px;
+    height: 30px;
+    background: rgb(162, 254, 173);
+    font-weight: 600;
+}
+
+.tinhsd:hover {
+    background-color: #cacaca;
+    cursor: pointer;
+}
+
 .bedresult{
     margin:10px;
     max-width: 200px;
@@ -515,7 +545,7 @@ input {
 }
 
 
-@media only screen and (max-width:46.1875em) {
+/* @media only screen and (max-width:46.1875em) {
     .input{
         flex-direction: column;    
     }
@@ -543,4 +573,4 @@ input {
         background-attachment: fixed;
         background-size: auto;
     }
-}
+} */
