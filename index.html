@@ -7,11 +7,12 @@
 <link rel="stylesheet" href="style.css"/>
 <script src="script.js"></script>
 <title>
-    BỘ CÔNG CỤ TÍNH TOÁN PHÁC ĐỒ XẠ TRỊ
+    Bộ công cụ tính toán phác đồ xạ trị
 </title>
 <link rel="icon" href="favicon.png" type="image/png"/>
 
 </head>
+<div class="body">
 <body>
     
 <h1 class="h1">
@@ -20,7 +21,7 @@
 
     <div class="wrapper">
 
-        <section class="input">
+        <div class="input">
         <div class="baoboc">
             <div class="BED-input">
                 <b>Phân liều:</b> <input class="input-box" type="text" name="PhanLieu" id="PhanLieu">
@@ -31,8 +32,10 @@
             <div class="BED-input">
             <b>Tỉ số α/β:</b> <input type="text" class="abbox" name="ab" id="ab">
             </div>
+            <div class="BED-input3">
+            <div class="nut"><button class="tinhBED" onclick="BED()">Tính toán</button></div>
+            </div>
             <div class="kq">
-                <button class="tinhBED" onclick="BED()">Tính toán</button>
                 <div class="bedresult">
                     <b>BED:</b> <input type="text" class="BEDresult" name="BEDresult" readonly  id="kqBED" > 
                 </div>
@@ -48,40 +51,40 @@
                 </div>
                 <div class="tieude">   
                     <div class="CSLT">
-                    <div class="congthuc">BED = D x (1 + d / (α/β))</div>
-                    <div class="congthuc">EQD2 = D x (1 + d / (α/β)) / (2 + (α/β))</div>  
+                    <div class="congthuc"><b>BED = D x (1 + d / (α/β))</b></div>
+                    <div class="congthuc"><b>EQD2 = D x (1 + d / (α/β)) / (2 + (α/β))</b></div>  
                     </div>
                 </div>
         
                     <div class="tuade">
-                        <strong class="tuade1">Ký hiệu</strong>
-                        <strong class="tuade2">Mô tả</strong>
+                        <strong class="tuade1"><b>Ký hiệu</b></strong>
+                        <strong class="tuade2"><b>Mô tả</b></strong>
 
                 </div>
                 <div class="chuthich">
-                    <p class="phantu1">BED</p>
-                    <p class="phantu2">Liều hiệu dụng sinh học, đơn vị Gy </p>           
+                    <p class="phantu1"><b>BED</b></p>
+                    <p class="phantu2"><b>Liều hiệu dụng sinh học, đơn vị Gy</b></p>           
                 </div>
                 <div class="chuthich">
-                    <p class="phantu3">EQD2</p>
-                    <p class="phantu4">Liều tương đương phân liều 2Gy, đơn vị Gy</p>
+                    <p class="phantu3"><b>EQD2</b></p>
+                    <p class="phantu4"><b>Liều tương đương phân liều 2Gy, đơn vị Gy</b></p>
                 </div>
                     
                 <div class="chuthich">
-                    <p class="phantu5">d</p>
-                    <p class="phantu6">Phân liều, đơn vị Gy</p>
+                    <p class="phantu5"><b>d</b></p>
+                    <p class="phantu6"><b>Phân liều, đơn vị Gy</b></p>
                 </div>
                 <div class="chuthich">
-                    <p class="phantu5">D</p>
-                    <p class="phantu8">Tổng liều, đơn vị Gy</p>
+                    <p class="phantu5"><b>D</b></p>
+                    <p class="phantu8"><b>Tổng liều, đơn vị Gy</b></p>
                 </div>
                 <div class="chuthich1">
-                    <p class="phantu9">α/β</p>
-                    <p class="phantu10">Tỉ lệ alpha/beta, đơn vị Gy</p>
+                    <p class="phantu9"><b>α/β</b></p>
+                    <p class="phantu10"><b>Tỉ lệ alpha/beta, đơn vị Gy</b></p>
                 </div>
             </div>
         </div>
-        </section>
+    </div>
         
     </div>
 
@@ -89,7 +92,7 @@
     <div class="tit">Thay đổi phác đồ điều trị</div>
 </h2>    
     <div class="wrapper1">
-        <section class="input">
+        <div class="input">
             <div class="baoboc">
                 <div class="alter-input">
                     <b>n<sub>1</sub></b>: <input class="input-boxn" type="text" name="PhanLieu" id="n1">
@@ -117,47 +120,47 @@
                     </div>
                     <div class="tieude">   
                         <div class="CSLT">
-                        <div class="congthuccd">n<sub>1</sub>d<sub>1</sub>(1 + d<sub>1</sub> / (α⁄β)) = n<sub>2</sub>d<sub>2</sub>(1 + d<sub>2</sub> / (α⁄β))</div>
+                        <div class="congthuccd"><b>n<sub>1</sub>d<sub>1</sub>(1 + d<sub>1</sub> / (α⁄β)) = n<sub>2</sub>d<sub>2</sub>(1 + d<sub>2</sub> / (α⁄β))</div>
               
                         </div>
                     </div>
             
                         <div class="tuade">
-                            <strong class="tuade1">Ký hiệu</strong>
-                            <strong class="tuade22">Mô tả</strong>
+                            <strong class="tuade1"><b>Ký hiệu</strong>
+                            <strong class="tuade22"><b>Mô tả</strong>
     
                     </div>
                     <div class="chuthich">
-                        <p class="phantu21">n<sub>1</sub></p>
-                        <p class="phantu22">Số phân liều của phác đồ xạ trị thứ nhất </p>           
+                        <p class="phantu21"><b>n<sub>1</sub></b></p>
+                        <p class="phantu22"><b>Số phân liều của phác đồ xạ trị thứ nhất</b></p>           
                     </div>
                     <div class="chuthich">
-                        <p class="phantu23">d<sub>1</sub></p>
-                        <p class="phantu24">Tổng liều phác đồ điều trị thứ nhất, đơn vị Gy</p>
+                        <p class="phantu23"><b>d<sub>1</sub></b></p>
+                        <p class="phantu24"><b>Tổng liều phác đồ điều trị thứ nhất, đơn vị Gy</b></p>
                     </div>
                         
                     <div class="chuthich">
-                        <p class="phantu25">n<sub>2</sub></p>
-                        <p class="phantu26">Số phân liều của phác đồ điều trị thứ hai</p>
+                        <p class="phantu25"><b>n<sub>2</sub></b></p>
+                        <p class="phantu26"><b>Số phân liều của phác đồ điều trị thứ hai</b></p>
                     </div>
                     <div class="chuthich">
-                        <p class="phantu25">d<sub>2</sub></p>
-                        <p class="phantu28">Tổng liều phác đồ điều trị thứ hai, đơn vị Gy</p>
+                        <p class="phantu25"><b>d<sub>2</sub></b></p>
+                        <p class="phantu28"><b>Tổng liều phác đồ điều trị thứ hai, đơn vị Gy</b></p>
                     </div>
                     <div class="chuthich2">
-                        <p class="phantu29">α/β</p>
-                        <p class="phantu210">Tỉ lệ alpha/beta, đơn vị Gy</p>
+                        <p class="phantu29"><b>α/β</b></p>
+                        <p class="phantu210"><b>Tỉ lệ alpha/beta, đơn vị Gy</b></p>
                     </div>
                 </div>
             </div>
-            </section>
+        </div>
     </div>
 
 <h2 class="h1">
     <div class="tit">Sửa phân liều sai</div>
 </h2>    
     <div class="wrapper2">
-        <section class="input">
+        <div class="input">
             <div class="baoboc1">
                 <div class="ss-input">
                     <b>D<sub>p</sub></b>: <input class="input-boxn" type="text" name="PhanLieu" id="Dp">
@@ -189,46 +192,47 @@
                     </div>
                     <div class="tieude">   
                         <div class="CSLT">
-                        <div class="congthuccd">d<sub>c</sub> = (D<sub>p</sub>d<sub>p</sub> - D<sub>e</sub>d<sub>e</sub>) / (D<sub>p</sub> - D<sub>e</sub>)</div>
+                        <div class="congthuccd"><b>d<sub>c</sub> = (D<sub>p</sub>d<sub>p</sub> - D<sub>e</sub>d<sub>e</sub>) / (D<sub>p</sub> - D<sub>e</sub>)</div>
                   
                         </div>
                     </div>
                 
                         <div class="tuade">
-                            <strong class="tuade1">Ký hiệu</strong>
-                            <strong class="tuade22">Mô tả</strong>
+                            <strong class="tuade1"><b>Ký hiệu</strong>
+                            <strong class="tuade22"><b>Mô tả</strong>
         
                         </div>
                         <div class="chuthich">
-                            <p class="phantu31">D<sub>p</sub></p>
-                            <p class="phantu32">Tổng liều theo kế hoạch, đơn vị Gy</p>           
+                            <p class="phantu31"><b>D<sub>p</sub></p>
+                            <p class="phantu32"><b>Tổng liều theo kế hoạch, đơn vị Gy</p>           
                         </div>
                         <div class="chuthich">
-                            <p class="phantu33">d<sub>p</sub></p>
-                            <p class="phantu34">Phân liều theo kế hoạch, đơn vị Gy</p>
+                            <p class="phantu33"><b>d<sub>p</sub></p>
+                            <p class="phantu34"><b>Phân liều theo kế hoạch, đơn vị Gy</p>
                         </div>
                             
                         <div class="chuthich">
-                            <p class="phantu35">D<sub>e</sub></p>
-                            <p class="phantu36">Tổng liều khi xạ sai kế hoạch, đơn vị Gy</p>
+                            <p class="phantu35"><b>D<sub>e</sub></p>
+                            <p class="phantu36"><b>Tổng liều khi xạ sai kế hoạch, đơn vị Gy</p>
                         </div>
                         <div class="chuthich">
-                            <p class="phantu35">d<sub>e</sub></p>
-                            <p class="phantu38">Phân liều khi xạ sai kế hoạch, đơn vị Gy</p>
+                            <p class="phantu35"><b>d<sub>e</sub></p>
+                            <p class="phantu38"><b>Phân liều khi xạ sai kế hoạch, đơn vị Gy</p>
                         </div>
                         <div class="chuthich">
-                            <p class="phantu39">D<sub>c</sub></p>
-                            <p class="phantu310">Tổng liều sau khi hiệu chỉnh, đơn vị Gy</p>
+                            <p class="phantu39"><b>D<sub>c</sub></p>
+                            <p class="phantu310"><b>Tổng liều sau khi hiệu chỉnh, đơn vị Gy</p>
                         </div>
                         <div class="chuthich2">
-                            <p class="phantu311">d<sub>c</sub></p>
-                            <p class="phantu312">Phân liều sau khi hiệu chỉnh, đơn vị Gy</p>
+                            <p class="phantu311"><b>d<sub>c</sub></p>
+                            <p class="phantu312"><b>Phân liều sau khi hiệu chỉnh, đơn vị Gy</p>
                         </div>
                     </div>
                 </div>
-                </section>
+            </div>
         </div>
 
     
 </body>
+</div>
 </html>

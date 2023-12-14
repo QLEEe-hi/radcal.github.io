@@ -3,15 +3,13 @@ body{
     background: linear-gradient(150deg,#ead6ee,#a0f1ea );
     font-family: 'monospace', sans-serif;
     font-display: swap;
-    height: inherit;
+    /* height: inherit; */
     justify-content: center;
     background-repeat: no-repeat;
-    min-width: 800px;
 }
 .h1{
     margin: 30px 0 30px 30px;
     font-size: 30px;
-    min-width: 1000px;
 }
 
 .tit{
@@ -19,7 +17,7 @@ body{
     text-align: center;
     width: 500px;
     border-radius: 20px;
-    min-height: 60px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,12 +38,11 @@ input {
     background: rgba(255,255,255,0.30);
     border: 1px solid rgba(255,255,255,0.34);
     flex-basis: 400px;
-    height: 500px;
+    height: 260px;
     padding: 20px 35px;
     border-radius: 20px;
-    min-width: 800px;
-    max-width: 800px;
-    max-height: 260px;
+    width: 810px;
+    /* max-height: 260px; */
     margin: auto;
     margin-bottom: 100px;    
 }
@@ -57,10 +54,16 @@ input {
     overflow: auto;
     padding: 10px;
     text-align: left;
-    width: 326px;
-    margin-left: 20px;
+    margin: auto;
+    margin-left: 10px;
 }
 
+.BED-input3{
+    background-color: transparent;
+    color: #232323;
+    margin: auto;
+    width: 150px;
+}
 
 .button{
     display: flex;
@@ -75,7 +78,19 @@ input {
     flex-basis: inherit;
     font-size: 24px;
 }
-
+.nut{
+    width: 10px;
+}
+.tinhBED{
+    border-radius: 20px;
+    /* margin: 8px 10px 2px 10px; */
+    margin: auto;
+    border: solid 1px #cacaca;
+    width:150px;
+    height: 30px;
+    background: rgb(162, 254, 173);
+    font-weight: 600;
+}
 
 .button:last-child{
     backdrop-filter: blur(5.5px);
@@ -138,17 +153,6 @@ input {
     max-width: 100px;
 }
 
-.tinhBED{
-    border-radius: 20px;
-    margin: 8px 10px 2px 10px;
-    border: solid 1px #cacaca;
-    margin-left: 105px;
-    width:150px;
-    height: 30px;
-    background: rgb(162, 254, 173);
-    font-weight: 600;
-}
-
 .tinhBED:hover {
     background-color: #cacaca;
     cursor: pointer;
@@ -198,6 +202,7 @@ input {
 
 .input{
     display: flex;
+    margin: auto;
 }
 .cslt{
     background:linear-gradient(220deg, #7acde2,#52dc83);
@@ -347,9 +352,8 @@ input {
     height: 500px;
     padding: 20px 35px;
     border-radius: 20px;
-    min-width: 800px;
-    max-width: 800px;
-    max-height: 260px;
+    width: 800px;
+    height: 260px;
     margin: auto;
     margin-bottom: 100px;
 }
@@ -452,6 +456,9 @@ input {
     font-size: 13px;
     font-weight: 600;
 }
+.kq{
+    margin: auto;
+}
 .kqchuyendoi{
     margin-left:110px;
 }
@@ -537,40 +544,269 @@ input {
     height: 500px;
     padding: 20px 35px;
     border-radius: 20px;
-    min-width: 800px;
-    max-width: 800px;
-    max-height: 288px;
+    width: 800px;
+    height: 288px;
     margin: auto;
     margin-bottom:80px ;
 }
 
 
-/* @media only screen and (max-width:46.1875em) {
+@media only screen and (max-width:800px) {
+    *{
+        font-size: 7px;
+    }
     .input{
-        flex-direction: column;    
+        flex-direction: column; 
+        height: 600px;
+        width: 300px;
+        font-size: 8px;
+        margin: auto;
     }
-    .h1{
-        min-width: 40%;
+    .BED-input3{
+        width: 50px;
+        margin: auto;
     }
-    .tit{
-        margin-left: 80px;
-        width: 400px;
-        margin-top: 80px;
+    .tinhBED{
+        width: 60px;
+        height: 20px;
     }
-    .wrapper{
-        min-width: 30px;
-        max-width: 460px;
-        min-height: 540px;
-        justify-content: center;
-        align-items: center;
-        margin-left: 40px;
+    .tinhcd{
+        margin: auto;
+        margin-top: 5px;
+        width: 60px;
+        height: 20px;
+    }
+    .kqchuyendoi{
+        margin: auto;
+        margin-left: 70px;
     }
     .baoboc{
+        width: 200px;
+        height: 240px;
+        font-size: 8px;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: -24.4px;
+    }
+    .wrapper, .wrapper1, .wrapper2{
+        min-width: 100px;
+        width: 150px;
+        height: 445px;
+        margin: auto;
         margin-bottom: 20px;
+    }
+    .abbox,.EQD2result,.BEDresult,.TongLieubox,.input-box{
+        height: 20px;
+        margin: auto;
+        width: 80px;
+    }
+    .BED-input{
+        margin: auto;
+        margin-left:25px ;
+    }
+    .kq{
+        margin: auto;
+    }
+    .bedresult{
+        text-align: center;
+        margin-left: 10px;
+    }
+    .eqdresult{
+        margin: auto;
+        margin-left: 43px;
+    }
+    .cslt,.cslt2,.cslt3{
+        width: 200px;
+        margin: auto;
+        margin-top: 10px;
+        height: 185px;
+        margin-left: -24.6px;
+    }
+    .CSLT{
+        width: 150px;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    .congthuc{
+        margin: auto;
+    }
+    .chuthich{
+        width: 200px;
+    }
+    .tuade{
+        margin: auto;
+        width: 200px; 
+    }
+    .h1{
+        align-self: center;
+        margin: 0px 0px 20px 0px;
+    }
+    .tit{
+        width: 80%;
+        margin-top: 80px;
+        margin: auto;
+        width: 190px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .tinhBED{
+        margin: right;
+    }
+    .tuade1{
+        margin: auto;
+        margin-left: 20px;
+    }
+    .tuade2{
+        margin: auto;
+        margin-left: 75px;
+    }
+    .phantu1{
+        margin: auto;
+        margin-top: 2px;
+        margin-left: 26px;
+    }
+    .phantu2{
+        margin: auto;
+        margin-top: 2px;
+        margin-left: 20px;
+    }
+    .phantu3{
+        margin: auto;
+        margin-left: 25px;
+    }
+    .phantu5{
+        margin: auto;
+        margin-left: 32px;
+    }
+    .phantu6{
+        margin: auto;
+        margin-left: 35px;
+    }
+    .phantu7{
+        margin: auto;
+        margin-left: 20px;
+    }
+    .phantu8{
+        margin: auto;
+        margin-left: 35px;
+    }
+    .phantu9{
+        margin: auto;
+        margin-left: 30px;
+    }
+    .phantu10{
+        margin: auto;
+        margin-left: 31px;
+    }
+    .bieuthuc{
+        margin: auto;
+        margin-bottom: -8px;
+    }
+    .alter-input{
+        background-color: transparent;
+        color: #232323;
+        width: fit-content;
+    }
+    .input-boxn{
+        margin: auto;
+        width: 80px;
+    }
+    .abbox1{
+        margin: auto;
+        width: 60px;
+    }
+    .alter-inputab{
+        margin: auto;
+        width: auto; 
+    }
+    .congthuccd{
+        margin: auto;
+        height: 20px;
+        padding: 0;
+
+    }
+    .tuade22{
+        margin: auto;
+        margin-left: 81px;
+    }
+    .phantu21,.phantu23,.phantu25{
+        margin: auto;
+        margin-left: 29px;
+    }
+    .phantu22{
+        margin: auto;
+        margin-left: 50px;
+        margin-right: 10px;
+    }
+    .phantu24,.phantu26,.phantu28{
+        margin: auto;
+        margin-left: 50px;
+        margin-right: 10px;
+        text-align: center;
+    }
+    .phantu29{
+        margin: auto;
+        margin-left: 30px;
+    }
+    .phantu210{
+        margin: auto;
+        margin-right: 18px;
+        margin-top: 8px;
+    }
+    .cslt2{
+        height: fit-content;
+    }
+    .wrapper1{
+        height: 480px;
+    }
+    .input{
+        margin: auto;
+        width: fit-content;
+        height: auto;
+    }
+    .ss-input{
+        margin: auto;
+        width: auto;
+    }
+    .baoboc1{
+        width: 200px;
+        height: 260px;
+        font-size: 8px;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: -24.4px;
+    }
+    .tinhsd{
+        margin: auto;
+        margin-left: 36px;
+        width: 60px;
+        height: 20px;
+    }
+    .phantu31,.phantu33,.phantu35,.phantu311,.phantu39{
+        margin: auto;
+        margin-left: 28px;
+    }
+    .phantu32,.phantu34,.phantu36,.phantu38,.phantu310,.phantu312{
+        margin: auto;
         margin-left: 55px;
+        margin-right: 10px;
+        text-align: center;
     }
-    body{
-        background-attachment: fixed;
-        background-size: auto;
+    .wrapper2{
+        height: 530px;
     }
-} */
+    .cslt3{
+        height: 258px;
+    }
+    .chuthich2{
+        height: 34px;
+    }
+    .body{
+        width: 50%;
+    }
+}
+
