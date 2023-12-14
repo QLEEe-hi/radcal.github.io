@@ -551,7 +551,7 @@ input {
 }
 
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:500px) {
     *{
         font-size: 7px;
     }
@@ -591,7 +591,6 @@ input {
         margin-left: -24.4px;
     }
     .wrapper, .wrapper1, .wrapper2{
-        min-width: 100px;
         width: 150px;
         height: 445px;
         margin: auto;
@@ -804,9 +803,6 @@ input {
     }
     .chuthich2{
         height: 34px;
-    }
-    .body{
-        width: 50%;
     }
 }
 
