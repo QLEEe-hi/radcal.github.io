@@ -13,7 +13,7 @@ function BED(){
     var ab = parseFloat(abEle.value).toFixed(2);
 
     
-    if (PhanLieu<0 || TongLieu<0 || ab < 0 ){
+    if (PhanLieu<0 || TongLieu<0 || ab < 0 ||isNaN(PhanLieu)||isNaN(TongLieu)||isNaN(ab)){
         alert('Hãy kiểm tra lại dữ liệu đã nhập vào');
         EQD2 = 0;
         BED = 0;}
