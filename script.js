@@ -1,28 +1,42 @@
-var input_BED = document.getElementById("kqBED");
+
+function checkchuoi(bien) {
+    let newbien = bien.replace(/,/g,'.');
+    if (newbien.split('.').length - 1 >= 2) {
+        return 'Error';
+    }
+    for (let i = 0; i < newbien.length; i++) {
+        if(isNaN(parseInt(newbien[i]))) {
+            if(newbien[i] != '.') {
+                return 'Error';
+            }
+        }
+    }
+    return newbien;
+}
 
 function BED(){
 
-    var PhanLieuEle = document.getElementById("PhanLieu");
-    var PhanLieu = parseFloat(PhanLieuEle.value).toFixed(2);
+    let PhanLieu = document.getElementById("PhanLieu");
+    PhanLieu = parseFloat(checkchuoi(PhanLieu.value))
 
 
-    var TongLieuEle = document.getElementById("TongLieu");
-    var TongLieu = parseFloat(TongLieuEle.value).toFixed(2);
+    let TongLieu = document.getElementById("TongLieu");
+    TongLieu = parseFloat(checkchuoi(TongLieu.value))
 
-    var abEle = document.getElementById("ab");
-    var ab = parseFloat(abEle.value).toFixed(2);
+    let ab = document.getElementById("ab");
+    ab = parseFloat(checkchuoi(ab.value))
 
     
-    if (PhanLieu<0 || TongLieu<0 || ab < 0){
+    if (PhanLieu<0 || TongLieu<0 || ab < 0|| dk(TongLieu) ){
         if (ab<=0){
             alert('Hãy kiểm tra lại dữ liệu đã nhập vào');
             EQD2 = 0;
             BED = 0;
         };
     }        
-    var BED = Math.round((TongLieu * (1 + PhanLieu/ab))*100)/100;
+    let BED = Math.round((TongLieu * (1 + PhanLieu/ab))*100)/100;
 
-    var EQD2 = Math.round(((TongLieu*(1+(PhanLieu/ab)))/(1+(2/ab)))*100)/100;
+    let EQD2 = Math.round(((TongLieu*(1+(PhanLieu/ab)))/(1+(2/ab)))*100)/100;
 
     if (isNaN(BED)||isNaN(EQD2)){
         alert('Hãy kiểm tra lại dữ liệu đã nhập vào');
@@ -45,21 +59,20 @@ function dk(value){
 };
 
 function ChuyenDoi(){
-    let n1Ele= document.getElementById("n1");
-    let n1 = parseFloat(n1Ele.value);
+    let n1= document.getElementById("n1");
+    n1 = parseFloat(checkchuoi(n1.value));
 
-    let n2Ele= document.getElementById("n2");
-    let n2 = parseFloat(n2Ele.value);
+    let n2= document.getElementById("n2");
+    n2 = parseFloat(checkchuoi(n2.value));
 
-    let d1Ele= document.getElementById("d1");
-    let d1 = parseFloat(parseFloat(d1Ele.value));
+    let d1= document.getElementById("d1");
+    d1 = parseFloat(checkchuoi(d1.value));
 
-    let d2Ele= document.getElementById("d2");
-    let d2 = parseFloat(parseFloat(d2Ele.value));
+    let d2= document.getElementById("d2");
+    d2 = parseFloat(checkchuoi(d2.value));
 
-    let abEle = document.getElementById("abcd");
-    let ab = parseFloat(parseFloat(abEle.value).toFixed(2));
-
+    let ab = document.getElementById("abcd");
+    ab = parseFloat(checkchuoi(ab.value));
 
     if (Number.isNaN(n1) && dk(n2) && d2>=0 && d1>=0 && ab>0){
         let kqn1 = Math.round(((n2*d2*(ab+d2))/(d1*(ab+d1)))*100)/100;
@@ -70,7 +83,7 @@ function ChuyenDoi(){
         document.getElementById("n2").value = kqn2.toString();
     }
     else if(dk(n1) && dk(n2) && Number.isNaN(d1) && d2>=0 && ab>0){
-        var kqd1 = Math.round((parseFloat(Math.sqrt(( ab * ((n2 * d2)/n1)*(1 + d2 / ab)+Math.pow((0.5*ab),2)))-0.5*ab))*100)/100;
+        let kqd1 = Math.round((parseFloat(Math.sqrt(( ab * ((n2 * d2)/n1)*(1 + d2 / ab)+Math.pow((0.5*ab),2)))-0.5*ab))*100)/100;
         document.getElementById("d1").value = kqd1.toString();
         console.log(kqd1);
     }
@@ -86,17 +99,17 @@ function ChuyenDoi(){
 };
 
 function SuaSai(){
-    let DpEle = document.getElementById("Dp");
-    let Dp = parseFloat(DpEle.value);
+    let Dp = document.getElementById("Dp");
+    Dp = parseFloat(checkchuoi(Dp.value));
 
-    let dpEle = document.getElementById("dp");
-    let dp = parseFloat(dpEle.value);
+    let dp = document.getElementById("dp");
+    dp = parseFloat(checkchuoi(dp.value));
 
-    let DeEle = document.getElementById("De");
-    let De = parseFloat(DeEle.value);
+    let De = document.getElementById("De");
+    De = parseFloat(checkchuoi(De.value));
 
-    let deEle = document.getElementById("de");
-    let de = parseFloat(deEle.value);
+    let de = document.getElementById("de");
+    de = parseFloat(checkchuoi(de.value));
 
     let dc = Math.round((((Dp*dp - De*de)/(Dp - De))*100))/100;
     let Dc = Math.round((Dp - De)*100)/100;
